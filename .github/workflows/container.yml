@@ -29,5 +29,5 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
 
-      - run: aws cloudfront create-invalidation --distribution-id E3C1TQGC96ITJ0 --paths "/container/latest/index.html"
+      # - run: aws cloudfront create-invalidation --distribution-id E3C1TQGC96ITJ0 --paths "/container/latest/index.html"
       #- run: aws cloudfront create-invalidation --distribution-id E12FQP7GSEGK2K --paths "/*"
